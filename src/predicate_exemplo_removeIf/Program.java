@@ -2,7 +2,6 @@ package predicate_exemplo_removeIf;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 import entitie.Product;
 
@@ -18,9 +17,8 @@ public class Program {
 		list.add(new Product("HD", 80.90));
 		
 		Double min =100.0;
-		Predicate<Product> pred = p -> p.getPrice()>=min ;
 		
-		list.removeIf(pred);
+		list.removeIf(p -> p.getPrice()>=min);
 		
 		for(Product p: list) {
 			System.out.println(p);
