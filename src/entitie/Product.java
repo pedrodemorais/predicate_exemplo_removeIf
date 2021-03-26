@@ -35,6 +35,11 @@ public class Product  {
 	}
 	
 	
+	public static boolean  ProductPredicate(Product p) {
+		return p.getPrice() >=100;
+		
+	}
+	
 
 	@Override
 	public String toString() {
