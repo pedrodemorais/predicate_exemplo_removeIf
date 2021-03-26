@@ -35,8 +35,13 @@ public class Product  {
 	}
 	
 	
-	public static boolean  ProductPredicate(Product p) {
-		return p.getPrice() >=100;
+	public static boolean  staticProductPredicate(Product p) {
+		return p.getPrice()>=100;
+		
+	}
+	
+	public  boolean  nonStaticProductPredicate() {
+		return price>=100;
 		
 	}
 	
